@@ -1,0 +1,33 @@
+.ant-layout.default-layout
+  min-height 100vh
+  background-color #F2F7F7
+
+
+  .header-nav
+    text-align right
+
+  .container
+    max-width 1240px
+    padding 0 20px
+    margin 0 auto
+    min-height calc(100vh - 120px - 80px)
+
+@media screen and (max-width: 1200px)
+  .ant-layout.default-layout
+
+    &.min-height
+      height 100vh
+      overflow hidden
+
+    .container
+      padding 0 16px
+      width 100%
+      min-height calc(100vh - 200px)
+
+      .transaction-list-content
+        padding-bottom 18px !important
+
+  .ant-message
+    .ant-message-notice-content
+      width 100%
+      word-break break-all

@@ -1,0 +1,511 @@
+.transaction-list-search-title
+    display flex
+    justify-content space-between
+    color $main-font
+    font-size 16px
+    font-weight 600
+    background-color $white
+    border-radius 8px
+    padding 20px
+    margin-top 20px
+
+    span
+      &:last-child
+        color $blue2
+        font-size 14px
+        font-weight 400
+  .pagination-top
+    .pagination
+      padding-bottom 0
+
+  // .node-info
+  //   background-color #fff
+  //   margin-top 27px
+  //   border-radius 12px
+  //   height 64px
+  //   line-height 64px
+  //   padding 0 24px
+  //   margin-bottom 40px
+
+  //   >div
+  //     display flex
+  //     >div
+  //       &:nth-child(1)
+  //         width 80px
+
+  //       &:nth-child(2)
+  //         width 17%
+  //         text-align center
+
+  //       &:nth-child(3)
+  //         width 397px
+
+  //       &:nth-child(4)
+  //         width 20%
+
+  //       &:nth-child(5)
+  //         width 20%
+
+  //       &:nth-child(6)
+  //         width 16%
+  //         text-align right
+
+
+  //   img
+  //     width 30px
+  //     height 30px
+
+.transaction-list-content
+  background-color $white
+  padding 30px 20px 0px
+  border-radius 24px
+  margin 20px 0 40px
+
+  &.node-list-content
+    margin-bottom 16px
+
+  .blocks-title
+    display flex
+    justify-content space-between
+    font-size 16px
+    color#333333
+    font-weight 600
+    align-items center
+
+    >div
+      display flex
+      align-items center
+
+      .mobile-height
+        color #999999
+        margin-left 12px
+
+    img
+      width 28px
+      height 28px
+      margin-right 12px
+
+    .list-icon
+      display flex
+      align-items center
+
+      .transaction-list-font
+        color #999
+        font-size 14px
+        margin-left 6px
+        font-weight 400
+
+      img
+        margin-top -4px
+
+    span
+      &:last-child
+        color #808080
+        float right
+        font-size 12px
+
+    .node-search-wrapper
+      display flex
+      width 400px
+
+      .ant-input-affix-wrapper
+        .ant-input
+          border-radius 8px
+          border-top-right-radius 0 !important
+          border-bottom-right-radius 0 !important
+
+      .ant-btn
+        background-color #32519c
+        border-radius 8px
+        height 40px
+        border-top-left-radius 0 !important
+        border-bottom-left-radius 0 !important
+        > span
+          color $white
+          font-size 14px
+
+    .node-submit-wrapper
+      display flex
+      align-items center
+      .anticon-question-circle
+        font-size 14px
+        color #122075
+        margin .5px 4px 0 0
+
+      > a
+        color $blue2
+        font-size 14px
+        font-weight normal
+
+    .time_filter
+      display flex
+      align-items center
+      .time_filter-title
+        padding-right 12px
+        color #122075
+        font-size 7px
+      .ant-calendar-picker
+        .ant-calendar-picker-input
+          color #32519c
+          cursor pointer
+
+    &.node-view-title
+      .list-icon
+        display flex
+        align-items center
+        span
+          font-size 16px
+          color #00D0C3
+          &:first-of-type
+            cursor pointer
+          &:last-of-type
+            color $simple-grey
+            padding-left 4px
+
+      .blocks-title-info
+        color #050d3f
+        font-size 14px
+        & > div:last-of-type
+          padding-top 4px
+
+  .transaction-list-content-table
+    margin-bottom 15px
+    padding-bottom 30px
+
+    .table-rank
+      width 28px
+      height 28px
+
+    .table-rank-other
+      width 28px
+      height 28px
+      border-radius 50%
+      background-color #FAFAFA
+      line-height 28px
+      text-align center
+      color #999999
+      font-size 16px
+
+    .ant-table-thead
+      >tr
+        > th
+          background-color $white
+          border-bottom 1px solid #E8F0EC
+          color #999
+          padding-left 0
+          font-weight 600
+          font-size 14px
+          padding 15px 0 24px
+          padding-right 20px
+
+          &:last-child
+            padding-right 0
+
+    .ant-table-tbody
+      > tr
+        &:nth-child(-n+4)
+          td
+            color #333
+        &:hover
+          &:not(.ant-table-expanded-row)
+            td
+              background-color #fff
+
+        >td
+          padding-left 0
+          color #999
+          font-size 14px
+          font-weight 400
+          padding-right 20px
+          border-bottom 1px solid #f5f5f5
+
+          &:last-child
+            padding-right 0
+
+          &.td-color
+            color $blue2
+
+          .text-hidden
+            overflow hidden
+            text-overflow ellipsis
+            cursor pointer
+            &.no-link
+              cursor unset
+              color #666
+
+          .text-normal
+            cursor unset
+            color #666
+
+          .view-btn
+            color $blue2
+            cursor pointer
+
+    .ant-table-placeholder
+      border-bottom 0
+
+  &.node-list-content,
+  &.node-falternate-list-content
+    .transaction-list-content-table
+      .ant-table-thead
+        > tr
+          > th
+            background-color #fff
+
+            &:last-child
+              padding-right 0
+
+          > th:not(:last-of-type)
+            padding 0
+
+      .ant-table-tbody
+        > tr
+          > td:not(:last-of-type)
+            padding-right 14px
+
+      .text-wrap
+        word-break break-all
+        vertical-align middle
+        cursor pointer
+
+.mobile-table
+  display none
+
+@media screen and (max-width: 1200px)
+  // .node-info
+  //   overflow-x auto
+
+  //   >div
+  //     width 1100px
+  .transaction
+    margin-top 12px
+    margin-bottom 163px
+    height auto !important
+
+    .transaction-list-font
+      font-size 12px
+      margin-left 8px
+
+  .transaction-list-content
+    margin 0
+    padding 0 !important
+    border-radius 12px
+
+    .ant-table
+      table
+        width 1100px
+
+    .mobile-transaction-table
+      .transaction-list-content-table
+        margin-top 0
+
+    .transaction-list-content-table
+      padding-bottom 0
+      margin-bottom 18px
+
+      .ant-table-body
+        overflow auto
+
+        tr
+          td
+            padding-left 12px
+            padding-right 12px
+            font-size 13px
+
+            &:last-child
+              padding-right 12px
+
+          th
+            padding-left 12px
+            padding-right 12px
+            padding-top 0
+            background-color #fffff
+
+            &:last-child
+              padding-right 12px
+
+
+    &.node-list-content
+    &.node-falternate-list-content
+      .transaction-list-content-table
+        .ant-table-thead
+          > tr
+            > th:not(:last-of-type)
+              padding-right 4px
+            > th:not(:first-of-type)
+              padding-left 4px
+        .ant-table-tbody
+          > tr
+            > td:not(:last-of-type)
+              padding-right 4px
+            > td:not(:first-of-type)
+              padding-left 4px
+
+    .blocks-title
+      padding 14px 12px
+      margin-bottom 0
+      font-size 13px
+
+      .mobile-height
+        font-size 12px
+        margin-left 8px
+        font-weight 400
+
+      img
+        width 20px
+        height 20px
+        margin-right 6px
+
+      &.node-view-title
+
+        .blocks-title-info
+          word-break break-all
+          padding 14px 12px 0
+          font-size 12px
+
+  .transaction-list-search-title
+    padding 0
+
+  .mobile-table
+    display block
+
+    .transaction-list-content-table
+      margin-top 0
+      margin-bottom 0
+      .table-rank
+          width 28px
+          height 28px
+
+        .table-rank-other
+          width 28px
+          height 28px
+          border-radius 50%
+          background-color #FAFAFA
+          line-height 28px
+          text-align center
+          color #999999
+          font-size 16px
+          margin 0 auto
+
+      .ant-table-thead
+        tr
+          th
+            font-size 13px
+            border-top 0
+            background-color #fff
+
+    .mobile-title
+      padding 10px 12px
+      border-bottom 1px solid #e5e5e5
+
+    .mobile-content
+      padding 0px 12px 10px
+      color $blue2
+      font-weight 400
+      word-break break-all
+
+  .pc-table
+    display none
+
+  .node
+    .blocks-title
+      flex-direction column
+      align-items unset
+      padding 0
+      .list-icon
+        padding 14px 12px
+        border-bottom 1px solid #e5e5e5
+      .node-search-wrapper
+        width 100%
+        display flex
+        flex-direction column
+        padding 14px 12px
+        .ant-btn
+          align-self flex-end
+          width 60px
+          margin-top 12px
+          height 24px
+          line-height 24px
+          border-radius 4px !important
+          display flex
+          justify-content center
+          > span
+            font-size 12px
+        .ant-input
+          height 40px
+          border-radius 4px !important
+
+        .ant-input-affix-wrapper
+          .ant-input
+            border-top-right-radius 4px !important
+            border-bottom-right-radius 4px !important
+
+      .node-submit-wrapper
+        display flex
+        align-items center
+        padding 14px 12px
+        .anticon-question-circle
+          font-size 13px
+          margin-top -2px
+        > a
+          font-size 13px
+
+    .node-list-content
+      .blocks-title
+        flex-direction row
+        align-items center
+        justify-content space-between
+        .list-icon
+          border 0
+
+    &.node-view
+      .ant-table
+        table
+          width 1000px
+      .pagination-mobile
+        padding 16px 12px 20px
+
+  .branch-list
+    .ant-table
+      table
+        width 500px
+
+  .block-out
+    .ant-table
+      table
+        width 500px
+    .blocks-title
+      flex-direction column
+      align-items unset
+      padding 0
+      .list-icon
+        padding 14px 12px
+        border-bottom 1px solid #e5e5e5
+      .time_filter
+        display flex
+        padding 14px 12px
+        .ant-calendar-picker
+          flex 1
+          .ant-calendar-picker-input
+            height 40px
+            border-color #dbe1e8
+            border-left 0
+            text-align center
+            font-size 14px
+            border-top-left-radius 0
+            border-bottom-left-radius 0
+        .time_filter-title
+          display block
+          height 40px
+          width 88px
+          text-align center
+          line-height 40px
+          border 1px solid #dbe1e8
+          border-top-left-radius 4px
+          border-bottom-left-radius 4px
+          font-size 14px
+  .ant-calendar-picker-container
+    left 0
+    right 0
+
+

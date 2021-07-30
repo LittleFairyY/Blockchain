@@ -1,0 +1,73 @@
+.pagination
+  display flex
+  height 48px
+  justify-content space-between
+  padding-bottom 20px
+  overflow hidden
+  border 1px solid #E8F0EC
+  border-radius 12px
+
+  .line
+    width 1px
+    background-color #E8F0EC
+    height 18px
+
+  .page-btn
+    display inline-block
+    width 70px
+    height 48px
+    line-height 48px
+    text-align center
+    border 0
+    font-size 12px
+    cursor pointer
+
+    >img
+      width 14px !important
+      height 14px !important
+      margin-right 0 !important
+
+    >span
+      color #00D0C3 !important
+
+    &.ant-btn[disabled]
+      color #CCCCCC
+      border-color #e5e5e5
+      background-color transparent !important
+
+      >span
+        color #ccc !important
+
+  .group-left
+    display flex
+    align-items center
+
+  .group-right
+    display flex
+    align-items center
+
+  .page-info
+    display inline-block
+    width 104px
+    height 48px
+    line-height 48px
+    text-align center
+    border-radius 0px
+    border-right 1px solid #E8F0EC
+    border-left 1px solid #E8F0EC
+    color #b6b6b6
+    font-size 12px
+    background-color transparent
+
+@media screen and (max-width: 1200px)
+  .pagination
+    padding 0
+    margin 18px 12px 0
+
+    .page-btn
+      width 58px
+      font-size 13px
+
+
+
+

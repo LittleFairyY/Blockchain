@@ -1,0 +1,272 @@
+.header-mobile
+  display none
+
+.search-title
+  color #00D0C3
+  font-weight 600
+
+.search-content
+  margin-bottom 0
+  margin-top 8px
+  color #666666
+  white-space nowrap
+  text-overflow ellipsis
+  overflow hidden
+
+
+.ant-select-dropdown-menu-item
+  padding 11px 24px
+  border-bottom 1px solid #E8F0EC
+.ant-select-dropdown-menu
+  padding 0
+.header
+  height 80px
+  border-bottom 2px solid #E8F0EC
+
+  .header-inside
+    max-width 1200px
+    margin 0 auto
+    display flex
+    // justify-content space-between
+    align-items center
+    height 100%
+
+    .logo-box
+      display flex
+
+      .logo
+        width 28px
+        height 28px
+        margin-right 10px
+        display flex
+        justify-content center
+        align-items center
+
+        >img
+          width 100%
+          height 100%
+
+      span
+        color #999
+        font-size 14px
+    a
+      font-size 14px
+      color #ccc
+      margin-right 30px
+      display block
+      white-space nowrap
+
+      &.active
+        color white
+
+      &:hover
+        color white
+
+      &:last-of-type
+        margin-right 44px
+
+.search-bar
+  height 40px
+  width 474px
+  margin-left 34px
+  background-color #fff
+  border-radius 24px
+  box-sizing border-box
+  margin-right 27px
+  overflow hidden
+  display flex
+  justify-content flex-start
+  align-items center
+  padding-right 24px
+
+
+  .ant-input
+    border 0
+
+    &:focus
+      box-shadow none
+
+  .ant-select-auto-complete.ant-select .ant-select-selection--single
+    background-color transparent
+
+  .ant-select-show-search
+    position relative
+    width 100% !important
+    input
+      width 100%
+      display block
+      border 0
+      font-size 14px
+      padding-left 24px
+      color #B0BFBE
+
+    .ant-select-selection__placeholder
+      margin-left 24px
+
+  .search-icon
+    font-size 18px
+    height 26px
+    width 26px
+
+.language
+  display flex
+  flex  1
+  justify-content flex-end
+
+  .ant-btn
+    width 132px
+    height 48px
+    border-radius 12px
+    border 1px solid #E8F0EC
+    background-color transparent
+    color #333333
+    font-size 14px
+
+    img
+      width 8px
+      height 8px
+      margin-left 4px
+
+.herder-nav
+  display flex
+  justify-content space-around
+  width 370px
+  margin: 38px auto 26px
+
+  a
+    flex 1
+    text-align center
+    color #B0BFBE
+
+  img
+    width 20px
+    height 20px
+    margin-right 8px
+
+  .activeLink
+    position relative
+    color #00D0C3
+    padding-bottom 13px
+    border-bottom 2px solid #00D0C3
+
+@media screen and (max-width: 1200px)
+  .ant-select-dropdown
+    border-radius 12px
+    box-shadow 0px 0px 56px 0px #E3E5E5
+    overflow hidden
+
+  .pc-only
+    display none
+
+  .header
+    display none
+
+  .header-mobile
+    display block
+    position relative
+    background-color #F2F7F7
+    padding 0 24px 16px
+    border-bottom 1px solid #E8F0EC
+    box-sizing border-box
+    margin-bottom 12px
+
+    .header-mobile-inside
+      display flex
+      justify-content space-between
+      align-items center
+      width 100%
+      padding-top 33px
+      margin-bottom 14px
+      background-color #F2F7F7;
+
+      .logo-box
+        display flex
+        color #999999
+        font-size 13px
+        align-items center
+
+        .logo
+          width 16px
+          height 16px
+          margin-right 6px
+
+          img
+            width 100%
+            height 100%
+
+      #nav-icon
+        width 22px
+        height 22px
+
+        img
+          width 100%
+          height 100%
+
+    .search-bar
+      width 100%
+      height unset
+      background-color #fff
+      border-radius 30px
+      padding-left 12px
+      border-bottom 0
+      margin-left 0
+      opacity 1
+
+      img
+        width 16px
+        height 16px
+
+      &.show
+        opacity 0
+
+      .ant-select-show-search
+        height 44px
+        .ant-select-selection__placeholder
+          margin-left 8px
+
+        .ant-select-selection__rendered
+          height 44px
+
+          input
+            height 44px
+            padding-left 8px
+
+    .header-mobile-content
+      position absolute
+      left 0
+      right 0
+      top 83px
+      z-index 99
+      width 100%
+      background-color rgba(0, 0, 0, 0.7)
+      height 0
+      overflow hidden
+      transition height 0.2s ease-out
+
+      &.open
+        height 100vh !important
+        border-top 1px solid #E8F0EC
+        >div
+          background-color #F2F7F7
+          padding 0 24px
+
+      a
+        font-size 15px
+        color #B0BFBE
+        display block
+        padding 0
+        line-height 60px
+        border-bottom 1px solid #E8F0EC
+
+        img
+          width 24px
+          height 24px
+          margin-right 8px
+
+        &.lan.active
+          color #00D0C3
+        &.activeLink
+          color #00D0C3
+
+        &.en
+          padding-left 35px

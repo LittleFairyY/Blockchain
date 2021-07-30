@@ -1,0 +1,136 @@
+.page-holders
+  color $light-black
+  border-radius 10px
+  margin-bottom 40px
+
+  .holders-title
+    font-size 16px
+    padding 20px
+    color $lapis-blue
+    background-color $white
+    margin-top 20px
+    border-top-left-radius 10px
+    border-top-right-radius 10px
+    display flex
+    align-items center
+
+    .anticon
+      padding-right 5px
+      font-size 22px
+
+  .holders-hart
+    background-color $white
+    .echarts-for-react
+      height 400px !important
+
+  .holders-list
+    background-color $white
+    padding 0 20px
+    border-bottom-left-radius 10px
+    border-bottom-right-radius 10px
+
+    .ant-table-content
+      .ant-table-thead
+        tr
+          th
+            background-color transparent
+            color $lapis-blue
+            padding-top 14px
+            padding-bottom 14px
+            border-top 1px solid $lighter-grey
+            border-color $lighter-grey
+
+            &.id-sort
+              white-space nowrap
+
+      .ant-table-tbody
+        > tr
+        &:hover
+          &:not(.ant-table-expanded-row)
+            td
+              background-color #fff
+
+        .ant-table-row
+          td
+            color $darkest-grey
+            padding-top 14px
+            padding-bottom 14px
+            border-color $lighter-grey
+
+          &:last-of-type
+            td
+              border-bottom 0
+
+        .holder-list-address
+          color $sky-blue
+          cursor pointer
+
+          &.list-color
+            color #666
+
+      &
+        th, td
+          &:first-of-type
+            padding-left 0
+
+          &:last-of-type
+            padding-right 0
+
+  .page-holders-nodata
+    height 220px
+    line-height 220px
+    text-align center
+    color #ccc
+    font-size 16px
+    background-color $white
+
+@media screen and (max-width: 1200px)
+  .page-holders
+    .holders-title
+      font-size 13px
+      padding 11px 12px
+      margin-top 16px
+      font-weight 600
+      border 1px solid $lighter-grey
+      border-top-left-radius 4px
+      border-top-right-radius 4px
+
+      .anticon
+        font-size 13px
+        color #122075
+        font-weight 600
+
+    .holders-hart
+      .echarts-for-react
+        height unset !important
+
+    .holders-list
+      padding 0
+      margin-top 16px
+      border-radius 4px
+      overflow hidden
+
+      .ant-table-content
+        .ant-table-body
+          overflow scroll
+
+          table
+            width: 700px
+
+            thead
+              background-color #f4f7fc
+              padding 0 12px
+
+            &
+              th, td
+                font-size 13px
+                &:first-of-type
+                  padding-left 12px
+
+                &:last-of-type
+                  padding-right 12px
+
+    .page-holders-nodata
+      height 110px
+      line-height 110px
+      border-radius 4px

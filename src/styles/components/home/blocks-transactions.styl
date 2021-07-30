@@ -1,0 +1,486 @@
+.page-home
+  margin-bottom 40px
+  .home-detail
+    display flex
+    justify-content space-between
+
+    .home-detail-left
+      background-color #fff
+      border-radius 24px
+      padding 24px 0
+      width 472px
+      height 264px
+
+      .left-header
+        padding 0 24px
+        color #333333
+        font-size 14px
+        display flex
+        align-items center
+        margin-bottom 30px
+
+        img
+          width 30px
+          height 30px
+          margin-right 8px
+
+      .left-data
+        padding 0 24px
+        border-bottom 1px solid #E8F0EC
+        padding-bottom 23px
+        display flex
+        justify-content space-between
+
+        span
+          &:first-child
+            font-size 24px
+            color #333333
+
+          &:last-child
+            color #36BF9B
+            font-size 20px
+
+      .left-info
+        padding 24px 24px 0
+
+        .left-info-item
+          margin-bottom 20px
+          display flex
+          justify-content space-between
+
+          span
+            font-size 16px
+            color #333
+
+            &:last-child
+              font-weight 500
+
+    .home-detail-right
+      background-color #fff
+      border-radius 24px
+      padding 24px 0
+      width 696px
+      height 264px
+
+      .right-header
+        border-bottom 1px solid #E8F0EC
+        padding 0 24px 25px
+        display flex
+
+        .right-header-item
+          flex 1
+          display flex
+          position relative
+
+          &:not(&:last-child)
+            &:after
+              content ""
+              position absolute
+              right 24px
+              bottom 0
+              width 1px
+              background-color #E8F0EC
+              height 40px
+
+          img
+            width 28px
+            height 28px
+            margin-right 12px
+
+          .right-header-item-info
+            .right-header-item-info-title
+              color #333333
+              font-size 16px
+              margin-bottom 10px
+
+            .right-header-item-info-data
+              font-size 14px
+              color #999999
+
+      .right-content
+        display flex
+        padding 14px 24px 0
+
+        .right-circulating
+          width 33.33%
+          margin-right 25px
+
+        .right-circulating-title
+          font-size 16px
+          color #333333
+          margin-bottom 14px
+          display flex
+          justify-content space-between
+
+        .right-circulating-data
+          width 208px
+          height 52px
+          line-height 52px
+          background-color #F1FAFA
+          font-size 15px
+          color #333333
+          text-align center
+          border-radius 10px
+
+        .right-frozen
+          .right-frozen-data
+            display flex
+            margin-top 15px
+
+            .right-frozen-data-left
+              width 200px
+              height 52px
+              line-height 52px
+              text-align center
+              background-image url('./images/imgs/frozen_green@2x.png')
+              background-repeat no-repeat
+              background-size 100% 100%
+              color #fff
+              position relative
+
+            .right-frozen-data-right
+              width 228px
+              height 52px
+              line-height 52px
+              text-align center
+              background-image url('./images/imgs/frozen_red@2x.png')
+              background-repeat no-repeat
+              background-size 100% 100%
+              color #fff
+
+  .home-blocks-transactions
+    background-color $white
+    border-radius 24px
+    margin-top 20px
+
+    .blocks-transactions-nodata
+      color #00D0C3
+      padding 50px 0
+      text-align center
+
+    .blocks-transactions-title
+      display flex
+      justify-content space-between
+      align-items center
+      font-weight 600
+      color #333
+      padding 22px 24px
+      font-size 16px
+
+      img
+        margin-right 4px
+
+      .list-icon
+        img
+          margin-top -4px
+          width 28px
+          height 28px
+
+      .view-all
+        color #00D0C3
+        font-weight 400
+        font-size 14px
+        cursor pointer
+        padding 5px 0
+        outline none
+
+    .blocks-transactions-content
+      border-top 1px solid #E8F0EC
+      padding 0 24px 15px
+
+      .block-content-item
+        height 88px
+        display flex
+        flex-direction column
+        justify-content center
+        border-bottom 1px solid $lighter-grey
+
+        > div
+          padding-bottom 10px
+          .item-info
+            display flex
+            justify-content space-between
+            margin-bottom 12px
+            display flex
+            align-items center
+
+            >div
+              display flex
+              align-items center
+
+          .item-label
+            color #333333
+            font-size 16px
+            margin-right 4px
+            font-weight 600
+
+          .item-wrapper
+            color #00D0C3
+            font-size 16px
+            font-weight 500
+
+            &.item-transactions
+              font-size 14px
+              width 360px
+              overflow hidden
+              text-overflow ellipsis
+              white-space nowrap
+              display inline-block
+
+          .item-right
+            color #999999
+            font-size 14px
+            display flex
+            align-items center
+
+            span
+              width 179px
+              overflow hidden
+              text-overflow ellipsis
+              white-space nowrap
+              display inline-block
+
+
+          .item-bottom
+            display flex
+            justify-content space-between
+
+            .item-label
+              font-size 14px
+              font-weight 400
+
+        &:hover
+          background-color #f3f6fc
+
+.ant-table-placeholder
+  height 110px
+  line-height 110px
+  text-align center !important
+  color #ccc !important
+  font-size 16px !important
+  padding 0 !important
+
+@media screen and (max-width: 1200px)
+  .page-home
+    margin-bottom 16px
+
+    .home-detail
+      flex-direction column
+
+      .home-detail-left
+        width 100%
+        margin-bottom 12px
+        padding 16px 0 0
+        height auto
+
+        .left-header
+          padding 0 12px
+          font-size 13px
+          margin-bottom 12px
+
+          img
+            width 24px
+            height 24px
+
+        .left-data
+          padding 0 12px 12px
+          justify-content flex-start
+          align-items center
+
+          span
+            font-size 20px
+            margin-right 6px
+
+            &:last-child
+              font-size 13px
+
+        .left-info
+          padding 12px 12px 0
+
+          .left-info-item
+            margin-bottom 12px
+            span
+              font-size 12px
+
+              &:first-child
+                color #999999
+
+      .home-detail-right
+        width 100%
+        height auto
+        background-color transparent
+
+        .right-header
+          background-color #fff
+          border-radius 12px
+          padding 0
+          margin-bottom 12px
+          border-bottom 0
+          flex-direction column
+          justify-content center
+          flex-wrap wrap
+
+          .right-header-item
+            padding 14px 28px
+
+            &:not(&:last-child)
+              &:after
+                height 20px
+                bottom 42px
+
+            .right-header-item-info
+              .right-header-header
+                display flex
+
+                .right-header-item-info-title
+                  font-size 14px
+                  margin-bottom 8px
+
+              >.right-header-item-info-title
+                font-size 15px
+                margin-bottom 8px
+
+              .right-header-item-info-data
+                font-size 13px
+            img
+              width 24px
+              height 24px
+              margin-right 6px
+
+          >.right-header-item
+            padding-top 14px
+
+            &:first-child
+              width 100%
+              padding-bottom 17px
+              justify-content center
+              border-bottom 1px solid #E8F0EC
+
+              &:after
+                display none
+      .home-detail-right
+        .right-content
+          background-color #fff
+          border-radius 12px
+          padding 13px 12px 16px
+          flex-direction column-reverse
+
+          .right-frozen
+            .right-circulating-title
+              font-weight 600
+              font-size 14px !important
+              margin-bottom 10px !important
+
+              span
+                color #36BF9B
+
+                &:last-child
+                  color #F25C5C
+
+            .right-frozen-data-left
+              width 156px !important
+              height 32px !important
+              line-height 32px !important
+              font-size 15px
+
+            .right-frozen-data-right
+              width 182px !important
+              height 32px !important
+              line-height 32px !important
+              font-size 15px
+
+          .right-circulating
+            margin-top 13px
+            width 100%
+            margin-right 0
+
+            .right-circulating-title
+              font-size 14px
+              margin-bottom 10px
+
+            .right-circulating-data
+              font-weight 500
+              width 100%
+              margin-right 0
+
+    .blocks-transactions-row
+      .ant-col
+        width 100%
+
+        .home-blocks-transactions
+          margin-top 0
+          border-radius 12px
+
+        .blocks-transactions-title
+          // border-bottom 1px solid #E8F0EC
+          padding 15px 12px 10px
+          margin-bottom 0
+          font-size 14px
+          > div
+            font-weight 600
+
+          img
+            width 24px
+            height 24px
+            margin-right 6px
+
+          .view-all
+            font-size 13px
+
+        .blocks-transactions-content
+          padding 0 12px
+          margin-bottom 12px
+
+          .block-content-item
+            padding 17px 0
+
+            > div
+              padding-bottom 0
+              .item-info
+                font-size 13px
+                margin-bottom 10px
+
+                .item-label
+                  font-size 13px
+
+                .item-wrapper
+                  font-size 13px
+
+                &.item-from-to
+                  display flex
+
+                > div
+                  display flex
+                  align-items center
+
+                  &:first-of-type
+                    padding-right 0
+
+                  .item-wrapper
+                    display block
+                    width 203px
+                    overflow hidden
+                    text-overflow ellipsis
+                    white-space nowrap
+
+              .item-bottom
+                .item-right
+                  span
+                    width 110px
+
+    .home-transaction-echarts
+      margin-top 16px
+      border-radius 4px
+
+      .holders-title
+        font-size 13px
+        padding 11px 12px
+        border 1px solid $lighter-grey
+
+        img
+          width 12px
+          height 12px
+
+
+
+

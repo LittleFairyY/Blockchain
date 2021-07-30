@@ -1,0 +1,47 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+[
+    {
+        "id": 1,
+        "attachedData": "234234234234",
+        "blockHeight": 1,
+        "forkName": "dfgdf",
+        "hash": "5676567",
+        "timestamp": 2,
+        "txFee": 3,
+        "amount": 12,
+        "blockHash": "2342234",
+        "forkHash": "2342234",
+        "fromAddress": "2342234",
+        "toAddress": "2342234"
+    },
+    {
+        "id": 2,
+        "attachedData": "234234234234",
+        "blockHeight": 1,
+        "forkName": "dfgdf",
+        "hash": "5676567",
+        "timestamp": 2,
+        "txFee": 3,
+        "amount": 12,
+        "blockHash": "2342234",
+        "forkHash": "2342234",
+        "fromAddress": "2342234",
+        "toAddress": "2342234"
+    },
+    {
+        "id": 3,
+        "attachedData": "234234234234",
+        "blockHeight": 1,
+        "forkName": "dfgdf",
+        "hash": "5676567",
+        "timestamp": 2,
+        "txFee": 3,
+        "amount": 12,
+        "blockHash": "2342234",
+        "forkHash": "2342234",
+        "fromAddress": "2342234",
+        "toAddress": "2342234"
+    }
+]

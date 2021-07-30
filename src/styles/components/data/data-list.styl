@@ -1,0 +1,119 @@
+.data-list
+  background-color $white
+  border-radius 10px
+  margin-bottom 40px
+
+  .blocks-title
+    > div
+      display flex
+      align-items center
+      font-size 16px
+      color $main-font
+      font-weight 600
+
+      img
+        width 22px
+        height 22px
+        margin-right 5px
+
+  .ant-table-content
+    border-top 1px solid #e8e8e8
+    .ant-table-thead
+      tr
+        th
+          background-color transparent
+          color $lapis-blue
+          border-color $lighter-grey
+
+    .ant-table-tbody
+      .ant-table-row
+        background-color red
+        td
+          vertical-align middle
+          color $darkest-grey
+          border-color $lighter-grey
+          &.td-color
+            color #00D0C3
+
+        &:last-of-type
+          td
+            border-bottom 0
+
+
+      .data-line
+        .text-hidden-four
+          word-break break-word
+          overflow hidden
+          text-overflow ellipsis
+          display -webkit-box
+          /* autoprefixer: ignore next */
+          -webkit-box-orient vertical
+          -webkit-line-clamp 4
+
+    &
+      th, td
+        &:first-of-type
+          padding-left 0
+
+  .ant-table-placeholder
+    border-bottom 0
+
+.text-hidden
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+  cursor pointer
+  &.no-link
+    cursor unset
+    color #666
+
+.page-data
+  .pc-table
+    .pagination-top
+      margin-bottom 20px
+
+@media screen and (max-width: 1200px)
+  .data-list
+    border-radius 4px
+    padding 12px
+    margin 0
+
+    .ant-table-content
+      .ant-table-body
+        overflow scroll
+
+        table
+          width: 1300px
+
+    .data-time
+      white-space nowrap
+
+    .blocks-title
+      > div
+        font-size 13px
+
+        img
+          width 12px
+          height 12px
+
+  .ant-calendar-picker-container
+    padding 0 16px !important
+
+    .ant-calendar
+      width 100%
+
+      .ant-calendar-range-part
+        width 100%
+
+        &.ant-calendar-range-right
+          .ant-calendar-date-input-wrap
+            margin-left 0
+
+      .ant-calendar-range-middle
+        display none
+
+.page-data
+  .mobile-table
+    > div:first-of-type
+      .pagination-mobile
+        margin-bottom 8px
