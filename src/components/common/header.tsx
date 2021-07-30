@@ -131,7 +131,7 @@ class Header extends React.Component<IProps, IState> {
               <div className="logo">
                 <img src={logoIcon} alt="" />
               </div>
-              <span>Blockchain</span>
+              <span>Intelligent Bionic Network</span>
             </div>
             <div className="search-bar">
               <AutoComplete
@@ -203,7 +203,7 @@ class Header extends React.Component<IProps, IState> {
               <div className="logo">
                 <img src={logoIcon} alt="" />
               </div>
-              <span>Blockchain</span>
+              <span>Intelligent Bionic Network</span>
             </div>
             <div id="nav-icon" onClick={this.toggleMenu}>
               <img src={this.props.auth.openMenu ? closeIcon : menuIcon} />

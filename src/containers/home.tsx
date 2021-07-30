@@ -61,7 +61,7 @@ class Home extends React.Component<IProps, IState> {
         <div className="home-detail">
           <div className="home-detail-left">
             <div className="left-header">
-              <img src={logoIcon} alt="" /> ETH
+              <img src={logoIcon} alt="" /> IBR
             </div>
             <div className="left-data">
               <span>$3.42342</span>

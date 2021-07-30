@@ -1,3 +1,4 @@
+import { isArray } from 'lodash';
 import { inject, observer } from 'mobx-react';
 import * as React from 'react';
 import { withNamespaces, WithNamespaces } from 'react-i18next';
@@ -40,10 +41,10 @@ class Statistics extends React.Component<IProps> {
       getStatisticsList('receive'),
     ]).then(res => {
       this.setState({
-        balanceList: res[0],
-        freezeList: res[1],
-        sendList: res[2],
-        receiveList: res[3],
+        balanceList: isArray(res[0]) ? res[0] : [],
+        freezeList: isArray(res[1]) ? res[1] : [],
+        sendList: isArray(res[2]) ? res[2] : [],
+        receiveList: isArray(res[3]) ? res[3] : [],
       });
     });
   }

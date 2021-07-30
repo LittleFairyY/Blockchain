@@ -37,7 +37,7 @@ class BlocksItem extends React.Component<IProps> {
                 style={{ cursor: 'pointer' }}
                 onClick={this.goToBlockDetail}
               >
-                {itemData.height}
+                #{itemData.height}
               </span>
             </div>
             <div className="item-right">{itemData.nodename}</div>

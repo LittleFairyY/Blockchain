@@ -54,7 +54,7 @@ class Default extends React.Component<IProps, IState> {
           >
             <div className="container">{children}</div>
           </ConfigProvider>
-          <Footer />
+          {/* <Footer /> */}
         </Content>
       </Layout>
     );

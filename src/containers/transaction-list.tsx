@@ -112,7 +112,7 @@ class TransactionList extends React.Component<IProps, IState> {
         ),
       },
       {
-        title: t('age'),
+        title: t('time'),
         dataIndex: 'time',
         key: 'time',
         width: 180,
@@ -174,7 +174,7 @@ class TransactionList extends React.Component<IProps, IState> {
         align: 'right',
         className: 'td-color',
         render: (text: string) => (
-          <div>{toThousands(getFixedValue(text, 6, false))} BST</div>
+          <div>{toThousands(getFixedValue(text, 6, false))} IBR</div>
         ),
       },
     ];

@@ -183,7 +183,7 @@ class AddressDetail extends React.Component<IProps, IState> {
         align: 'right',
         className: 'td-color',
         render: (text: string) => (
-          <div>{toThousands(getFixedValue(text, 6, false))} BST</div>
+          <div>{toThousands(getFixedValue(text, 6, false))} IBR</div>
         ),
       },
     ];
@@ -227,13 +227,13 @@ class AddressDetail extends React.Component<IProps, IState> {
                 <div>
                   <span className="leable">{t('balance')}</span>
                   <span>
-                    {toThousands(getFixedValue(balance, 6, false))} BST
+                    {toThousands(getFixedValue(balance, 6, false))} IBR
                   </span>
                 </div>
                 <div>
                   <span className="leable">{t('freezing')}</span>
                   <span>
-                    {toThousands(getFixedValue(freeze, 6, false))} BST
+                    {toThousands(getFixedValue(freeze, 6, false))} IBR
                   </span>
                 </div>
               </div>
@@ -242,7 +242,7 @@ class AddressDetail extends React.Component<IProps, IState> {
                   <div>
                     <span className="leable">{t('balance')}</span>
                     <span>
-                      {toThousands(getFixedValue(balance, 6, false))} BST
+                      {toThousands(getFixedValue(balance, 6, false))} IBR
                     </span>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ class AddressDetail extends React.Component<IProps, IState> {
                   <div>
                     <span className="leable">{t('freezing')}</span>
                     <span>
-                      {toThousands(getFixedValue(freeze, 6, false))} BST
+                      {toThousands(getFixedValue(freeze, 6, false))} IBR
                     </span>
                   </div>
                 </div>
@@ -280,7 +280,7 @@ class AddressDetail extends React.Component<IProps, IState> {
             loading={loading}
             rowKey="uuid"
           />
-          <div className="pagination-top">
+          <div className="pagination-top mobile-table">
             <Pagination
               onChange={this.onChangePage}
               total={totalCount}

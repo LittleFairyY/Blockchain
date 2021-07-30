@@ -89,7 +89,7 @@ class BlockDetail extends React.Component<IProps> {
               <div className="info-line">
                 <span className="leable">{t('block_reward')}</span>
                 <span>
-                  {block.blockDetail && block.blockDetail.reward_money} BST
+                  {block.blockDetail && block.blockDetail.reward_money} IBR
               </span>
               </div>
             </div>

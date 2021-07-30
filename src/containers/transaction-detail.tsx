@@ -106,12 +106,12 @@ class TransactionDetail extends React.Component<IProps> {
                   transactions.transactionDetail.height || ''
                 )}
               >
-                {transactions.transactionDetail &&
+                #{transactions.transactionDetail &&
                   transactions.transactionDetail.height}
               </span>
             </div>
             <div className="info-line">
-              <span className="leable">{t('home_transactions_title')}</span>
+              <span className="leable">{t('timestamp')}</span>
               <span>
                 {transactions.transactionDetail &&
                   transactions.transactionDetail.transtime}{' '}
@@ -174,7 +174,7 @@ class TransactionDetail extends React.Component<IProps> {
                     false,
                   ),
                 )}{' '}
-                BST
+                IBR
               </span>
             </div>
             <div className="info-line">
@@ -188,7 +188,7 @@ class TransactionDetail extends React.Component<IProps> {
                     false,
                   ),
                 )}{' '}
-                BST
+                IBR
               </span>
             </div>
             <div className="info-line">
