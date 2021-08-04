@@ -32,7 +32,7 @@ class TransactionsItem extends React.Component<IProps> {
               </span>
             </div>
             <div style={{ color: '#33333', fontSize: '14px' }}>
-              {toThousands(getFixedValue(itemData.amount, 6, false))}IBR
+              {toThousands(getFixedValue(itemData.amount, 6, false))}<span style={{ color: '#999', marginLeft: '5px' }}>IBR</span>
             </div>
           </div>
           <div className="item-bottom">

@@ -233,6 +233,7 @@ class Header extends React.Component<IProps, IState> {
             <div>
               <Link
                 to="/"
+                onClick={this.toggleMenu}
                 className={classnames({
                   activeLink: this.state.currentPathName === 'home',
                 })}
@@ -245,6 +246,7 @@ class Header extends React.Component<IProps, IState> {
               </Link>
               <Link
                 to="/nodes"
+                onClick={this.toggleMenu}
                 className={classnames({
                   activeLink: this.state.currentPathName === 'nodes',
                 })}
@@ -257,6 +259,7 @@ class Header extends React.Component<IProps, IState> {
               </Link>
               <Link
                 to="/statistics"
+                onClick={this.toggleMenu}
                 className={classnames({
                   activeLink: this.state.currentPathName === 'statistics',
                 })}

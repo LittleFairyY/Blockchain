@@ -77,16 +77,25 @@ class Statistics extends React.Component<IProps> {
       {
         title: t('home_address_title'),
         dataIndex: 'address',
-        width: isMobile ? 240 : 346,
+        width: isMobile ? 240 : 260,
         className: 'td-color',
-        align: isMobile ? 'left' : 'center',
-        render: (text: string) => (
-          <div
-            style={{ cursor: 'pointer' }}
-            onClick={this.goAddressDetail(text)}
+        onCell: () => {
+          return {
+            style: {
+              whiteSpace: 'nowrap',
+              maxWidth: 200,
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+            },
+          };
+        },
+        render: (text: string | null) => (
+          <span
+            className="text-hidden"
+            onClick={this.goAddressDetail(text || '')}
           >
             {text}
-          </div>
+          </span>
         ),
       },
       {

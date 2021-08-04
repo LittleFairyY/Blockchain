@@ -18,51 +18,11 @@
     .pagination
       padding-bottom 0
 
-  // .node-info
-  //   background-color #fff
-  //   margin-top 27px
-  //   border-radius 12px
-  //   height 64px
-  //   line-height 64px
-  //   padding 0 24px
-  //   margin-bottom 40px
-
-  //   >div
-  //     display flex
-  //     >div
-  //       &:nth-child(1)
-  //         width 80px
-
-  //       &:nth-child(2)
-  //         width 17%
-  //         text-align center
-
-  //       &:nth-child(3)
-  //         width 397px
-
-  //       &:nth-child(4)
-  //         width 20%
-
-  //       &:nth-child(5)
-  //         width 20%
-
-  //       &:nth-child(6)
-  //         width 16%
-  //         text-align right
-
-
-  //   img
-  //     width 30px
-  //     height 30px
-
 .transaction-list-content
   background-color $white
   padding 30px 20px 0px
   border-radius 24px
-  margin 20px 0 40px
-
-  &.node-list-content
-    margin-bottom 16px
+  margin 20px 0 400px
 
   .blocks-title
     display flex
@@ -203,9 +163,6 @@
 
     .ant-table-tbody
       > tr
-        &:nth-child(-n+4)
-          td
-            color #333
         &:hover
           &:not(.ant-table-expanded-row)
             td
@@ -213,7 +170,7 @@
 
         >td
           padding-left 0
-          color #999
+          color #333
           font-size 14px
           font-weight 400
           padding-right 20px
@@ -243,6 +200,16 @@
 
     .ant-table-placeholder
       border-bottom 0
+  
+   &.node-list-content
+    margin-bottom 16px
+
+    .transaction-list-content-table
+      .ant-table-tbody
+        > tr
+          &:nth-child(n+4)
+            td
+              color #333
 
   &.node-list-content,
   &.node-falternate-list-content
