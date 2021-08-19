@@ -26,7 +26,6 @@ class Pagination extends React.PureComponent<IProps> {
   pageChangeHandler = (pageType: Paging) => () => {
     window.scrollTo(0, 0);
     const { pageSize, onChange, total, currentPage } = this.props;
-    console.log("pageChangeHandler", pageType)
     switch (pageType) {
       case Paging.First:
         onChange(1);
@@ -38,7 +37,7 @@ class Pagination extends React.PureComponent<IProps> {
         onChange(currentPage + 1);
         break;
       case Paging.Last:
-        const newCurrentPage = Math.ceil(total / pageSize) - 1;
+        const newCurrentPage = Math.ceil(total / pageSize);
         onChange(newCurrentPage);
         break;
       default:
@@ -46,7 +45,6 @@ class Pagination extends React.PureComponent<IProps> {
   };
   render() {
     const { currentPage, total, pageSize, disabled, t } = this.props;
-    console.log(currentPage + 1, Math.ceil(total / pageSize));
     return (
       <div>
         {total > pageSize && (
@@ -78,12 +76,12 @@ class Pagination extends React.PureComponent<IProps> {
                 className="page-btn"
                 onClick={this.pageChangeHandler(Paging.Next)}
                 disabled={
-                  disabled || currentPage === Math.ceil(total / pageSize) - 1
+                  disabled || currentPage === Math.ceil(total / pageSize)
                 }
               >
                 <img
                   src={
-                    disabled || currentPage === Math.ceil(total / pageSize) - 1
+                    disabled || currentPage === Math.ceil(total / pageSize)
                       ? rightIcon2
                       : rightIcon
                   }
@@ -94,7 +92,7 @@ class Pagination extends React.PureComponent<IProps> {
                 className="page-btn"
                 onClick={this.pageChangeHandler(Paging.Last)}
                 disabled={
-                  disabled || currentPage === Math.ceil(total / pageSize) - 1
+                  disabled || currentPage === Math.ceil(total / pageSize)
                 }
               >
                 {t('last')}
